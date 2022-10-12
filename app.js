@@ -37,6 +37,7 @@ app.use(cors())
 app.use(xss())
 
 // routes
+app.use('/', 'HELLO WORLDIES')
 app.use('/api/v1/auth', authRouter)
 app.use('/api/v1/jobs', authenticateUser, jobsRouter)
 
